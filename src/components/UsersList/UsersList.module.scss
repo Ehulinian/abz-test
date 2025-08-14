@@ -1,0 +1,25 @@
+@use '../../styles/mixins' as m;
+
+.usersContainer {
+	display: grid;
+	padding: 0;
+	width: 100%;
+
+	@include m.on-phone {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 40px;
+	}
+
+	@include m.on-tablet {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 16px;
+	}
+
+	@include m.on-desktop {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 29px;
+	}
+}

@@ -1,0 +1,30 @@
+@use '../../../styles/variables' as vars;
+
+.btn {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	vertical-align: middle;
+	color: #000000de;
+	background-color: vars.$primary-color;
+	border-radius: 80px;
+	border: none;
+	width: 100px;
+	padding-block: 4px;
+
+	&:hover {
+		background-color: #ffe302;
+	}
+
+	&:disabled {
+		background-color: #b4b4b4;
+		color: #ffffffde;
+	}
+}
+
+.btn.wide {
+	min-width: 120px;
+}

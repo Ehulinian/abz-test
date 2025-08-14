@@ -1,0 +1,36 @@
+@use 'variables' as vars;
+
+@mixin on-phone {
+	@media (min-width: vars.$phone-min-width) and (max-width: vars.$phone-max-width) {
+		@content;
+	}
+}
+
+@mixin on-tablet {
+	@media (min-width: vars.$tablet-min-width) and (max-width: vars.$tablet-max-width) {
+		@content;
+	}
+}
+
+@mixin on-desktop {
+	@media (min-width: vars.$desktop-min-width) {
+		@content;
+	}
+}
+
+@mixin content-padding-inline {
+	@include on-phone {
+		padding-inline: 16px;
+	}
+
+	@include on-tablet {
+		padding-inline: 32px;
+	}
+
+	@include on-desktop {
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1170px;
+		padding-inline: 0;
+	}
+}

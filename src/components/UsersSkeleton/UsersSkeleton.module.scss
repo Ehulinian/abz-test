@@ -1,0 +1,73 @@
+.usersContainer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 29px;
+	padding: 0;
+}
+
+.userCardSkeleton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px;
+	border-radius: 16px;
+}
+
+.avatarSkeleton {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background: linear-gradient(90deg, #ddd, #eee, #ddd);
+	animation: shimmer 1.5s infinite;
+}
+
+.positionSkeleton {
+	width: 100%;
+	height: 26px;
+	background: linear-gradient(90deg, #ddd, #eee, #ddd);
+	animation: shimmer 1.5s infinite;
+	border-radius: 4px;
+}
+
+.nameSkeleton {
+	width: 100%;
+	height: 26px;
+	background: linear-gradient(90deg, #ddd, #eee, #ddd);
+	animation: shimmer 1.5s infinite;
+	border-radius: 4px;
+}
+
+.emailSkeleton {
+	width: 100%;
+	height: 26px;
+	background: linear-gradient(90deg, #ddd, #eee, #ddd);
+	animation: shimmer 1.5s infinite;
+	border-radius: 4px;
+}
+
+.phoneSkeleton {
+	width: 100%;
+	height: 26px;
+	background: linear-gradient(90deg, #ddd, #eee, #ddd);
+	animation: shimmer 1.5s infinite;
+	border-radius: 4px;
+}
+
+.contentSkeleton {
+	width: 330px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: -200px 0;
+	}
+	100% {
+		background-position: 200px 0;
+	}
+}

@@ -1,0 +1,32 @@
+@use '../../styles/mixins' as m;
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	@include m.on-phone {
+		padding: 13px 16px;
+	}
+
+	@include m.on-tablet {
+		padding: 13px 32px;
+	}
+
+	@include m.on-desktop {
+		margin-inline: auto;
+		max-width: 1170px;
+		padding: 13px 60px;
+	}
+}
+
+.logoLink {
+	flex-shrink: 0;
+	width: 104px;
+	height: 26px;
+}
+
+.buttons {
+	display: flex;
+	gap: 10px;
+}

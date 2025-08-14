@@ -1,0 +1,60 @@
+@use '../../styles/mixins' as m;
+
+.userCard {
+	width: 100%;
+	border-radius: 16px;
+}
+
+.avatar {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.userInformation {
+	text-align: center;
+	width: 100%;
+}
+
+.email {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+	display: block;
+}
+
+.name {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+	display: block;
+}
+
+.position {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+	display: block;
+}
+
+.phone {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 100%;
+	display: block;
+}
+
+.content {
+	width: 100%;
+	display: flex;
+	padding: 20px;
+	gap: 20px;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}

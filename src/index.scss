@@ -1,0 +1,66 @@
+@use './styles/mixins' as *;
+@use './styles/variables' as *;
+@use './styles/fonts' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	font-weight: 400;
+}
+
+:root {
+	font-family: 'Nunito', sans-serif;
+	color: #000000de;
+}
+
+a {
+	text-decoration: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	background-color: $background-color;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+ul,
+li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+label,
+p {
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+}
+
+legend {
+	font-size: 16px;
+	line-height: 26px;
+	padding: 0;
+}
+
+h1,
+p {
+	margin: 0;
+}

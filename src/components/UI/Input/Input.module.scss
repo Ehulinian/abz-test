@@ -1,0 +1,41 @@
+.formInput {
+	width: 100%;
+	position: relative;
+
+	.error {
+		color: #cb3d40;
+	}
+
+	.hint,
+	.error {
+		position: absolute;
+		font-weight: 400;
+		font-size: 12px;
+		min-height: 14px;
+		line-height: 14px;
+		bottom: -18px;
+		left: 16px;
+	}
+
+	.hint {
+		color: #7e7e7e;
+	}
+}
+
+.input {
+	all: unset;
+	margin: 0;
+	padding: 0;
+	background: none;
+	width: 100%;
+	font: inherit;
+	color: inherit;
+	outline: 1px solid #d0cfcf;
+	box-sizing: border-box;
+	padding: 14px 0px 14px 16px;
+	line-height: 26px;
+
+	&.inputError {
+		outline: 2px solid #cb3d40;
+	}
+}
