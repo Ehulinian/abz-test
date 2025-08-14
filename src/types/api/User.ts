@@ -11,7 +11,7 @@ export interface User {
 	position: string;
 	position_id: number;
 	registration_timestamp: number;
-	photo: File | string;
+	photo: string;
 }
 
 export type GetUsersResponse = {
